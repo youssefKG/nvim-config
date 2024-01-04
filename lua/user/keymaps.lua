@@ -19,10 +19,11 @@ keymap("n" , "<S-l>" , ":bn <CR>" , opts)
 keymap("n" , "<S-h>" , ":bp <CR>", opts)
 keymap("n" , "<leader>bb" , ":buffers <CR>" , opts) 
 keymap("n" , "<leader>bd" , ":bdelete <CR>" , opts ) 
-
+keymap("n" , "<leader>bn", ":bn <CR>",opts)
+keymap("n" , "<leader>bp", ":bn <CR>" , opts)
 --insert mode 
-keymap("i" , "<leader><leader>", "<Esc>" , opts) 
-
- 
-
+keymap("i" ,"jk", "<Esc>" , opts) 
+-- visual mode  
+keymap("v" ,"<" , "<gv" , opts)
+keymap("v" ,">" , ">gv" , opts)
 

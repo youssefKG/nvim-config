@@ -1,3 +1,6 @@
 require "user.keymaps"
 require "user.options"
-
+require "user.packer"
+require "user.colorscheme"
+require "user.telescope"
+require "user.treesitter"
