@@ -46,6 +46,8 @@ return require('packer').startup(function(use)
 			"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
 		}
+		use 'NvChad/nvim-colorizer.lua'
+		use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 	end) 
 
 
