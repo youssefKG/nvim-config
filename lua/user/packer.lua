@@ -4,7 +4,7 @@
 vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+     use 'wbthomason/packer.nvim'
 			--use "savq/melange-nvim"
  	use {
 				'nvim-telescope/telescope.nvim', tag = '0.1.5',
@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
 		}
 		use 'NvChad/nvim-colorizer.lua'
 		use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+		use "nvim-tree/nvim-tree.lua"
 	end) 
 
 
