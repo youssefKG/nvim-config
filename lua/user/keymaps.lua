@@ -27,3 +27,5 @@ keymap("i", "jk", "<Esc>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 -- formating
+-- open nvim_tree
+vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle <CR>", { noremap = true, silent = true })

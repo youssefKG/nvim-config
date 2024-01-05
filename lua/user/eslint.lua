@@ -1,8 +1,4 @@
-local null_ls = require("null-ls")
 local eslint = require("eslint")
-
-null_ls.setup()
-
 eslint.setup({
 	bin = "eslint", -- or `eslint_d`
 	code_actions = {

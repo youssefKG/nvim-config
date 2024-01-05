@@ -6,3 +6,4 @@ opts.tabstop = 2
 opts.shiftwidth = 2
 opts.number = true
 opts.termguicolors = true
+opts.background = "dark"

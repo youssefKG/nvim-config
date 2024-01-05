@@ -60,8 +60,13 @@ return require("packer").startup(function(use)
 		end,
 	})
 	use("p00f/nvim-ts-rainbow")
-	use "nvim-lualine/lualine.nvim"
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
 	use 'nvim-tree/nvim-web-devicons'
 	use "windwp/nvim-ts-autotag"
 	use "MunifTanjim/prettier.nvim"
+	use "RRethy/vim-illuminate"
+	use "sainnhe/gruvbox-material"
 end)
