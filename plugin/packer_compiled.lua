@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
@@ -170,6 +175,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-ts-rainbow"] = {
     loaded = true,
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-rainbow",
@@ -189,6 +199,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   ["solarized-osaka.nvim"] = {
     loaded = true,

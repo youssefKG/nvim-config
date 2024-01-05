@@ -11,3 +11,6 @@ require "user.autopairs"
 require "user.null_is"
 require "user.telescope"
 require 'user.nvim_tree'
+require 'user.lualine'
+require "user.autotag"
+require "user.prettier"
