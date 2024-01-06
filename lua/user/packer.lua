@@ -67,6 +67,12 @@ return require("packer").startup(function(use)
 	use 'nvim-tree/nvim-web-devicons'
 	use "windwp/nvim-ts-autotag"
 	use "MunifTanjim/prettier.nvim"
-	use "RRethy/vim-illuminate"
 	use "sainnhe/gruvbox-material"
+	use({
+		'nvimdev/lspsaga.nvim',
+		after = 'nvim-lspconfig',
+		config = function()
+			require('lspsaga').setup({})
+		end,
+	})
 end)

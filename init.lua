@@ -14,3 +14,4 @@ require 'user.nvim_tree'
 require 'user.lualine'
 require "user.autotag"
 require "user.prettier"
+require "user.lsplaga"

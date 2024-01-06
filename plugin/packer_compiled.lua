@@ -129,6 +129,14 @@ _G.packer_plugins = {
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lspsaga.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0" },
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\lspsaga.nvim",
+    url = "https://github.com/nvimdev/lspsaga.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
@@ -225,11 +233,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["vim-illuminate"] = {
-    loaded = true,
-    path = "C:\\Users\\sss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
-    url = "https://github.com/RRethy/vim-illuminate"
   }
 }
 
@@ -242,6 +245,15 @@ time([[Config for nvim-autopairs]], false)
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-lspconfig ]]
+vim.cmd [[ packadd lspsaga.nvim ]]
+
+-- Config for: lspsaga.nvim
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
+
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

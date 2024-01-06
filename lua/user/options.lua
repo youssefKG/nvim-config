@@ -7,3 +7,5 @@ opts.shiftwidth = 2
 opts.number = true
 opts.termguicolors = true
 opts.background = "dark"
+opts.cursorline = true
+opts.mouse = "a"
