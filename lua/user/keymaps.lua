@@ -18,7 +18,7 @@ keymap("n", "<C-down>", ":resize -2<CR>", opts)
 keymap("n", "<S-l>", ":bn <CR>", opts)
 keymap("n", "<S-h>", ":bp <CR>", opts)
 keymap("n", "<leader>bb", ":buffers <CR>", opts)
-keymap("n", "<leader>bd", ":bdelete <CR>", opts)
+keymap("n", "<leader>bd", ":bdelete! <CR>", opts)
 keymap("n", "<leader>bn", ":bn <CR>", opts)
 keymap("n", "<leader>bp", ":bn <CR>", opts)
 --insert mode
@@ -29,3 +29,8 @@ keymap("v", ">", ">gv", opts)
 -- formating
 -- open nvim_tree
 vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle <CR>", { noremap = true, silent = true })
+
+-- terminal mode 
+
+keymap("t" , "jk" , "<C-\\><C-N> <CR>" , opts)
+keymap('n' ,"<C-t>" , ':term bash <CR>' , opts )
